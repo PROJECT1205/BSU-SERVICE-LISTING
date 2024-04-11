@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="facilities.css">
+    <title> FACILITIES PAGE</title>
+    <link rel="website icon" type="jpg" href="website.jpg">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="header"> </div>
+        <div class="navbar-laptop">
+            <center>    
+                <button  onclick="location.href='index.html'"> HOME </a> </button>
+            <button  onclick="location.href='contacts.html'">CONTACTS </a> </button>
+            <button  onclick="location.href='about.html'">  ABOUT </a> </button>
+            <div class="dropdown"> 
+                <button class="button">MAP &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="facilities.html">FACILITIES</a>
+                    <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="menu-laptop"> 
+            <button  onclick="location.href='canteen.html'"> Lian Cafeteria </a> </button> <br>
+            <button  onclick="location.href='opencourt.html'">   OPEN COURT  </a> </button> <br>
+            <button  onclick="location.href='josongym.html'"> JOSON GYM  </a> </button> <br>
+            <button  onclick="location.href='ged.html'">  GED FACULTY </a> </button> <br>
+            <button  onclick="location.href='registrar.html'">  REGISTRAR OFFICE</a> </button> <br>
+            <button  onclick="location.href='guidance.html'">  GUIDANCE OFFICE  </a> </button> <br>
+            <button  onclick="location.href='imt.html'">  HOSTEL BUILDING  </a> </button> <br>
+            <button  onclick="location.href='cas.html'">  CAS BUILDING </a> </button> <br>
+            <button  onclick="location.href='heb.html'">  HEB Building</a> </button> <br>
+            <button  onclick="location.href='cteb.html'">  CTEB Building</a> </button> <br>
+            <button  onclick="location.href='parking.html'">  PARKING SPACE</a> </button> <br>
+
+        </div>
+        <div class="loader"></div>
+      
+        <div class="content-cellphone">
+            <h2>dito ilalagay ang pics etc.</h2>
+        </div> 
+
+        <div class="content-laptop">
+            <img src="heb.JPG" alt="Description of your image">
+                
+               <h2>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HEB BUILDING <br> <br>We are delighted to introduce you to <br>The HEB Building, <br>an architectural gem nestled within our <br>esteemed university
+            campus. With its <br> impeccable structure, cleanliness, and <br> commitment to fostering a conducive learning environment, The
+            HEB Building stands as a beacon of excellence at BSU</h2>
+                <ul>
+                    <li>Exceptional Architecture: Designed with precision and innovation, The HEB Building boasts an impressive architectural
+                    design that captivates the eye and inspires the mind. Its modern aesthetic seamlessly blends functionality with
+                    elegance, providing students with a sophisticated setting for their academic pursuits.</li>
+                    <li>Unparalleled Cleanliness: Cleanliness is not just a priority; it's a commitment at The HEB Building. Our dedicated team
+                    ensures that every corner of the building is meticulously maintained, creating a hygienic and inviting space for
+                    students to thrive in. </li>
+                    <li>Optimal Learning Environment: Step inside The HEB Building, and you'll immediately sense the atmosphere of scholarly
+                    excellence. Equipped with state-of-the-art facilities, spacious classrooms, and innovative learning spaces, this
+                    building sets the stage for meaningful academic experiences and intellectual growth. </li>
+                    <li> Supportive Community: Beyond its physical attributes, The HEB Building fosters a sense of community among students,
+faculty, and staff. It serves as a hub where ideas are exchanged, collaborations are formed, and lifelong friendships
+are forged, enriching the university experience for all.</li>
+                </ul>
+        </div> 
+    </div>
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+    
+    <script>
+        // Get the menu toggle button
+        const menuToggle = document.getElementById('menu-toggle');
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu-list');
+
+        // Add event listener for menu toggle button
+        menuToggle.addEventListener('click', function() {
+        // Toggle the class 'open' on the menu list
+        menuList.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>

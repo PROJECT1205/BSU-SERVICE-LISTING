@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="home.css">
+    <title>Home Page</title>
+    <link rel="icon" type="image/jpg" href="website.jpg"> 
+</head>
+<body>
+    <div id="container">
+        <div class="header"></div>
+        
+
+
+        <div class="navbar-laptop">
+            <center>    
+                <button onclick="location.href='index.html'"> HOME </button>
+                <button onclick="location.href='contacts.html'">CONTACTS </button>
+                <button onclick="location.href='about.html'">  ABOUT </button>
+                <div class="dropdown"> 
+                    <button class="button">MAP &nbsp; ▼</button>
+                    <div class="dropdown-content">
+                        <a id="top" href="facilities.html">FACILITIES</a>
+                        <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+
+         
+
+        <div class="welcome-section">
+            <h1>Welcome to Our Campus Service Listing Website</h1>
+            <p>
+                We are delighted to have you here! Our website is designed to provide you with easy access to various services available
+                on our college or university campus.
+            </p>
+            <p>
+                Whether you're looking for information about department buildings, dining areas, health clinics, or student support
+                services, you'll find it all here.
+            </p>
+        <div class="loader"></div>
+    </div>
+
+    
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="facilities.css">
+    <title> FACILITIES PAGE</title>
+    <link rel="website icon" type="jpg" href="website.jpg">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="header"> </div>
+        <div class="navbar-laptop">
+            <center>    
+                <button  onclick="location.href='index.html'"> HOME </a> </button>
+            <button  onclick="location.href='contacts.html'">CONTACTS </a> </button>
+            <button  onclick="location.href='about.html'">  ABOUT </a> </button>
+            <div class="dropdown"> 
+                <button class="button">MAP &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="facilities.html">FACILITIES</a>
+                    <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="menu-laptop"> 
+            <button  onclick="location.href='canteen.html'"> Lian Cafeteria </a> </button> <br>
+            <button  onclick="location.href='opencourt.html'">   OPEN COURT  </a> </button> <br>
+            <button  onclick="location.href='josongym.html'"> JOSON GYM  </a> </button> <br>
+            <button  onclick="location.href='ged.html'">  GED FACULTY </a> </button> <br>
+            <button  onclick="location.href='registrar.html'">  REGISTRAR OFFICE</a> </button> <br>
+            <button  onclick="location.href='guidance.html'">  GUIDANCE OFFICE  </a> </button> <br>
+            <button  onclick="location.href='imt.html'">  HOSTEL BUILDING  </a> </button> <br>
+            <button  onclick="location.href='cas.html'">  CAS BUILDING </a> </button> <br>
+            <button  onclick="location.href='heb.html'">  HEB Building</a> </button> <br>
+            <button  onclick="location.href='cteb.html'">  CTEB Building</a> </button> <br>
+            <button  onclick="location.href='parking.html'">  PARKING SPACE</a> </button> <br>
+
+        </div>
+        <div class="loader"></div>
+      
+        <div class="content-cellphone">
+            <h2>dito ilalagay ang pics etc.</h2>
+        </div> 
+
+        <div class="content-laptop">
+            <img src="court.JPG" alt="Description of your image">
+                
+               <h2>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Open Court  <br> <br>Looking for a place to shoot hoops, practice your dribbling skills,<br> or engage in friendly pickup games? Look no further
+            than our open basketball court, the ultimate destination for basketball enthusiasts of all skill levels!</h2>
+                <ul>
+                    <li>Accessible to All: Our open court is available to students of all abilities, whether you're a seasoned player or just
+                    getting started with the game. Everyone is welcome to join in the fun and improve their basketball skills.</li>
+                    <li>Casual Pickup Games: Gather your friends or join a pickup game with fellow students for some friendly competition. Open
+                    court time provides the perfect opportunity to showcase your talent, work on teamwork, and enjoy the thrill of
+                    basketball action. </li>
+                    <li>Structured Activities: In addition to pickup games, our open court sessions may include structured activities led by our
+                    experienced P.E. instructors. From skill-building drills to mini-tournaments, there's always something exciting
+                    happening on the court. </li>
+                    <li> Safe and Supportive Environment: We prioritize the safety and well-being of our students. Our open court sessions are
+                    supervised by trained staff members who ensure that all participants adhere to safety guidelines and exhibit good
+                    sportsmanship.</li>
+                </ul>
+        </div> 
+    </div>
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+    
+    <script>
+        // Get the menu toggle button
+        const menuToggle = document.getElementById('menu-toggle');
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu-list');
+
+        // Add event listener for menu toggle button
+        menuToggle.addEventListener('click', function() {
+        // Toggle the class 'open' on the menu list
+        menuList.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+.laptop-contacts
+{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.479);
+    border: 1px solid black;
+    height: 50%;
+    width: 90%; /* Adjust width as needed */
+    margin: 0 8%; /* Center the content horizontally */
+    padding: 20px; /* Add padding for better appearance */
+}
+.header {
+    width: 100%;
+    height: 200px;
+    font-size: medium;
+    border: 1px solid black;
+    background-image: url(header.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-image: url(background.JPEG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+button {
+    opacity: 100;
+    appearance: none;
+    background-color: white;
+    border: 0.125em solid #000000;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    position: relative;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.content-cellphone
+{
+    display: none;
+}
+
+.content-laptop 
+{
+    display: block;
+    float: left;
+    background-color: whitesmoke;
+    border: 5px solid red;
+    border-radius: 20px;
+    width: 20%;
+    float: left;
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: rgba(255, 0, 0, 0.295);
+}
+
+h2{
+    margin: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 95px;
+}
+.member-picture {
+    width: 100px;
+    height: 120px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 20%;
+    margin: 10px;
+}
+.leader-picture
+{
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 50px;
+    border-radius: 20%;
+    margin: 10px
+}
+
+
+.content-laptop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.members-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+
+
+.laptop-contacts {
+    width: 50%;
+    margin: 60px 50px 500px 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.laptop-contacts h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.laptop-contacts label {
+    display: block;
+    margin-bottom: 5px;
+}
+.laptop-contacts input[type="email"],
+.laptop-contacts input[type="text"],
+.laptop-contacts input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.laptop-contacts input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+.laptop-contacts input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.navbar-cellphone {
+    display: none;
+}
+
+/* Style for the navbar */
+.navbar-laptop {
+    display: block;
+    background-color: rgba(236, 0, 0, 0.5); /* Semi-transparent background color */
+    overflow: hidden; /* Overflow */
+}
+
+/* Center the content */
+.navbar-laptop center {
+    display: flex; /* Flexbox */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Style for the buttons */
+.navbar-laptop button {
+    background-color: white; /* Green background */
+    color: black; /* White text */
+    padding: 10px 20px; /* Padding */
+    margin: 0 5px; /* Margin */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor on hover */
+}
+.navbar-laptop button:hover
+{
+    background-color: #000000;
+    color: white;
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Hide the content by default */
+    position: absolute; /* Position it absolutely */
+    background-color: #f9f9f9; /* Background color */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show the content when hovering over the dropdown */
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    color: black; /* Black text */
+    padding: 12px 16px; /* Padding */
+    text-decoration: none; /* No underline */
+    display: block; /* Display as block */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #000000; /* Light grey background on hover */
+    color: white;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure the loader stays on top */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="facilities.css">
+    <title> FACILITIES PAGE</title>
+    <link rel="website icon" type="jpg" href="website.jpg">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="header"> </div>
+        <div class="navbar-laptop">
+            <center>    
+                <button  onclick="location.href='index.html'"> HOME </a> </button>
+            <button  onclick="location.href='contacts.html'">CONTACTS </a> </button>
+            <button  onclick="location.href='about.html'">  ABOUT </a> </button>
+            <div class="dropdown"> 
+                <button class="button">MAP &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="facilities.html">FACILITIES</a>
+                    <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="menu-laptop"> 
+            <button  onclick="location.href='canteen.html'"> Lian Cafeteria </a> </button> <br>
+            <button  onclick="location.href='opencourt.html'">   OPEN COURT  </a> </button> <br>
+            <button  onclick="location.href='josongym.html'"> JOSON GYM  </a> </button> <br>
+            <button  onclick="location.href='ged.html'">  GED FACULTY </a> </button> <br>
+            <button  onclick="location.href='registrar.html'">  REGISTRAR OFFICE</a> </button> <br>
+            <button  onclick="location.href='guidance.html'">  GUIDANCE OFFICE  </a> </button> <br>
+            <button  onclick="location.href='imt.html'">  HOSTEL BUILDING  </a> </button> <br>
+            <button  onclick="location.href='cas.html'">  CAS BUILDING </a> </button> <br>
+            <button  onclick="location.href='heb.html'">  HEB Building</a> </button> <br>
+            <button  onclick="location.href='cteb.html'">  CTEB Building</a> </button> <br>
+            <button  onclick="location.href='parking.html'">  PARKING SPACE</a> </button> <br>
+        </div>
+        <div class="loader"></div>
+      
+        <div class="content-cellphone">
+            <h2>dito ilalagay ang pics etc.</h2>
+        </div> 
+
+        <div class="content-laptop">
+            <img src="imt.JPG" alt="Description of your image">
+                
+               <h2>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HOSTEL BULDING   <br> <br>Step into the HOSTEL Building, where learning transcends the ordinary and reaches new <br>
+            heights of excellence. Designed as a specialized hub for students pursuing courses in tourism and cookery, this building <br>
+            embodies the essence of a dynamic and enriching learning environment.</h2>
+                <ul>
+                    <li>Tailored Learning Spaces: At the IMT Building, every detail is crafted with your educational needs in mind. From
+                    state-of-the-art kitchens equipped with the latest culinary tools to interactive classrooms designed to stimulate
+                    creativity and critical thinking, our learning spaces are optimized to enhance your learning experience.
+                    </li>
+                    <li>Specialized Facilities: Immerse yourself in hands-on learning experiences within our specialized facilities. Whether
+                    you're mastering culinary techniques in our professional-grade kitchens or exploring the intricacies of hospitality
+                    management in our simulated hotel environments, you'll find ample opportunities to hone your skills and expertise.</li>
+                    <li>Industry-Relevant Curriculum: Our curriculum is thoughtfully designed to align with industry standards and trends,
+                    ensuring that you graduate with the practical knowledge and competencies needed to excel in the dynamic fields of
+                    tourism and cookery. Engage in experiential learning activities, internships, and industry partnerships that bridge the
+                    gap between theory and practice</li>
+                    <li> Collaborative Community: Join a vibrant community of students, faculty, and industry professionals who share your
+                    passion for hospitality, tourism, and culinary arts. Collaborate on projects, exchange ideas, and build valuable
+                    connections that will support you throughout your academic journey and beyond.</li>
+                </ul>
+        </div> 
+    </div>
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+    
+    <script>
+        // Get the menu toggle button
+        const menuToggle = document.getElementById('menu-toggle');
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu-list');
+
+        // Add event listener for menu toggle button
+        menuToggle.addEventListener('click', function() {
+        // Toggle the class 'open' on the menu list
+        menuList.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>

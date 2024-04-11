@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="facilities.css">
+    <title> FACILITIES PAGE</title>
+    <link rel="website icon" type="jpg" href="website.jpg">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="header"> </div>
+        <div class="navbar-laptop">
+            <center>    
+                <button  onclick="location.href='index.html'"> HOME </a> </button>
+            <button  onclick="location.href='contacts.html'">CONTACTS </a> </button>
+            <button  onclick="location.href='about.html'">  ABOUT </a> </button>
+            <div class="dropdown"> 
+                <button class="button">MAP &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="facilities.html">FACILITIES</a>
+                    <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="menu-laptop"> 
+            <button  onclick="location.href='canteen.html'"> Lian Cafeteria </a> </button> <br>
+            <button  onclick="location.href='opencourt.html'">   OPEN COURT  </a> </button> <br>
+            <button  onclick="location.href='josongym.html'"> JOSON GYM  </a> </button> <br>
+            <button  onclick="location.href='ged.html'">  GED FACULTY </a> </button> <br>
+            <button  onclick="location.href='registrar.html'">  REGISTRAR OFFICE</a> </button> <br>
+            <button  onclick="location.href='guidance.html'">  GUIDANCE OFFICE  </a> </button> <br>
+            <button  onclick="location.href='imt.html'">  HOSTEL BUILDING  </a> </button> <br>
+            <button  onclick="location.href='cas.html'">  CAS BUILDING </a> </button> <br>
+            <button  onclick="location.href='heb.html'">  HEB Building</a> </button> <br>
+            <button  onclick="location.href='cteb.html'">  CTEB Building</a> </button> <br>
+            <button  onclick="location.href='parking.html'">  PARKING SPACE</a> </button> <br>
+
+        </div>
+        <div class="loader"></div>
+      
+        <div class="content-cellphone">
+            <h2>dito ilalagay ang pics etc.</h2>
+        </div> 
+
+        <div class="content-laptop">
+            <img src="ged.JPG" alt="Description of your image">
+                
+               <h2>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GED FACULTY  <br> <br>We are delighted to introduce GED Faculty, a dedicated space designed exclusively for our esteemed teaching <staff class="br"></staff>
+            Located at the heart of our campus, GED Faculty serves as a centralized hub where educators can access valuable <br>
+            resources, collaborate with colleagues, and inquire about academic matters with ease and convenience.</h2>
+                <ul>
+                    <li>Restricted Access: GED Faculty is accessible only to authorized teaching staff members. To gain entry, simply present
+                    your student ID number, choosing from numbers 1 to 4. Once verified, you'll have unrestricted access to the faculty and
+                    its resources.</li>
+                    <li>Academic Inquiry Center: Need to inquire about grades, assessments, or other academic matters? Our knowledgeable staff
+                    members are here to assist you. Whether you have questions about grading policies, student progress, or curriculum
+                    updates, we're dedicated to providing prompt and helpful assistance to support your teaching endeavors.</li>
+                    <li>Collaborative Workspace: Foster collaboration and exchange ideas with fellow educators in our comfortable and conducive
+                    workspace. Whether you're brainstorming lesson plans, sharing best practices, or discussing pedagogical strategies, GED
+                    Faculty offers a supportive environment for professional growth and development.</li>
+                    <li> Resource Library: Access a wealth of educational resources, including teaching materials, research articles, and
+                    instructional tools, to enhance your classroom instruction and enrich the learning experience for your students. Our
+                    comprehensive resource library is continually updated to provide you with the latest and most relevant educational
+                    content.</li>
+                </ul>
+        </div> 
+    </div>
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+    
+    <script>
+        // Get the menu toggle button
+        const menuToggle = document.getElementById('menu-toggle');
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu-list');
+
+        // Add event listener for menu toggle button
+        menuToggle.addEventListener('click', function() {
+        // Toggle the class 'open' on the menu list
+        menuList.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="facilities.css">
+    <title> FACILITIES PAGE</title>
+    <link rel="website icon" type="jpg" href="website.jpg">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="header"> </div>
+        <div class="navbar-laptop">
+            <center>    
+                <button  onclick="location.href='index.html'"> HOME </a> </button>
+            <button  onclick="location.href='contacts.html'">CONTACTS </a> </button>
+            <button  onclick="location.href='about.html'">  ABOUT </a> </button>
+            <div class="dropdown"> 
+                <button class="button">MAP &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="facilities.html">FACILITIES</a>
+                    <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="menu-laptop"> 
+            <button  onclick="location.href='canteen.html'"> Lian Cafeteria </a> </button> <br>
+            <button  onclick="location.href='opencourt.html'">   OPEN COURT  </a> </button> <br>
+            <button  onclick="location.href='josongym.html'"> JOSON GYM  </a> </button> <br>
+            <button  onclick="location.href='ged.html'">  GED FACULTY </a> </button> <br>
+            <button  onclick="location.href='registrar.html'">  REGISTRAR OFFICE</a> </button> <br>
+            <button  onclick="location.href='guidance.html'">  GUIDANCE OFFICE  </a> </button> <br>
+            <button  onclick="location.href='imt.html'">  HOSTEL BUILDING  </a> </button> <br>
+            <button  onclick="location.href='cas.html'">  CAS BUILDING </a> </button> <br>
+            <button  onclick="location.href='heb.html'">  HEB Building</a> </button> <br>
+            <button  onclick="location.href='cteb.html'">  CTEB Building</a> </button> <br>
+            <button  onclick="location.href='parking.html'">  PARKING SPACE</a> </button> <br>
+
+        </div>
+        <div class="loader"></div>
+      
+        <div class="content-cellphone">
+            <h2>dito ilalagay ang pics etc.</h2>
+        </div> 
+
+        <div class="content-laptop">
+            <img src="cteb.JPG" alt="Description of your image">
+                
+               <h2>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp CTEB BUILDING <br> <br>Have you ever longed for a building that not only <br> embodies architectural brilliance but also fosters an environment 
+            conducive to learning? <br> Look no further than the CTEB Building at BSU! <br> Renowned for its exceptional structure, pristine <br>
+            cleanliness, and dedication to providing a superior learning atmosphere,  the CTEB Building stands tall as a beacon of
+            academic excellence on our campus.</h2>
+                <ul>
+                    <li>Exquisite Architecture: The CTEB Building boasts a remarkable architectural design that seamlessly blends functionality
+                    with aesthetics. From its sleek facade to its spacious interiors, every aspect of the building is meticulously crafted
+                    to inspire and elevate the learning experience.</li>
+                    <li>Impeccable Cleanliness: Step into the CTEB Building, and you'll immediately notice the meticulous attention to
+                    cleanliness. Our dedicated maintenance team ensures that every corner of the building is kept immaculately clean,
+                    providing students with a hygienic and comfortable environment to thrive in. </li>
+                    <li>Optimal Learning Environment: With four floors of purpose-built classrooms, lecture halls, and study spaces, the CTEB
+                    Building offers an ideal setting for academic pursuits. Whether you're attending lectures, engaging in group
+                    discussions, or studying independently, you'll find the perfect space to focus and excel. </li>
+                    <li> Convenient Accessibility: Navigating the CTEB Building is a breeze, thanks to its modern amenities, including elevators
+                    that provide easy access to all four floors. Say goodbye to the hassle of climbing stairs and hello to effortless
+                    mobility within the building.</li>
+                </ul>
+        </div> 
+    </div>
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+    
+    <script>
+        // Get the menu toggle button
+        const menuToggle = document.getElementById('menu-toggle');
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu-list');
+
+        // Add event listener for menu toggle button
+        menuToggle.addEventListener('click', function() {
+        // Toggle the class 'open' on the menu list
+        menuList.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>

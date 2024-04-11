@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="facilities.css">
+    <title> FACILITIES PAGE</title>
+    <link rel="website icon" type="jpg" href="website.jpg">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="header"> </div>
+        <div class="navbar-laptop">
+            <center>    
+                <button  onclick="location.href='index.html'"> HOME </a> </button>
+            <button  onclick="location.href='contacts.html'">CONTACTS </a> </button>
+            <button  onclick="location.href='about.html'">  ABOUT </a> </button>
+            <div class="dropdown"> 
+                <button class="button">MAP &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="facilities.html">FACILITIES</a>
+                    <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="menu-laptop"> 
+            <button  onclick="location.href='canteen.html'"> Lian Cafeteria </a> </button> <br>
+            <button  onclick="location.href='opencourt.html'">   OPEN COURT  </a> </button> <br>
+            <button  onclick="location.href='josongym.html'"> JOSON GYM  </a> </button> <br>
+            <button  onclick="location.href='ged.html'">  GED FACULTY </a> </button> <br>
+            <button  onclick="location.href='registrar.html'">  REGISTRAR OFFICE</a> </button> <br>
+            <button  onclick="location.href='guidance.html'">  GUIDANCE OFFICE  </a> </button> <br>
+            <button  onclick="location.href='imt.html'">  HOSTEL BUILDING  </a> </button> <br>
+            <button  onclick="location.href='cas.html'">  CAS BUILDING </a> </button> <br>
+            <button  onclick="location.href='heb.html'">  HEB Building</a> </button> <br>
+            <button  onclick="location.href='cteb.html'">  CTEB Building</a> </button> <br>
+            <button  onclick="location.href='parking.html'">  PARKING SPACE</a> </button> <br>
+
+        </div>
+        <div class="loader"></div>
+      
+        <div class="content-cellphone">
+            <h2>dito ilalagay ang pics etc.</h2>
+        </div> 
+
+        <div class="content-laptop">
+            <img src="registrar.JPG" alt="Description of your image">
+                
+               <h2>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp REGISTRAR OFFICE  <br> <br>We are pleased to introduce the Registrar's Office, your dedicated resource for all matters related to academic <br>
+            administration and student services. Conveniently located on campus, the Registrar's Office serves as your go-to <br>
+            destination for resolving payment inquiries, adjusting your class schedule, and addressing any conflicts that may arise <br>
+            during the registration process.</h2>
+                <ul>
+                    <li>Payment Inquiries: Have questions about your tuition fees, payment deadlines, or financial aid options? Our friendly and
+                    knowledgeable staff members are here to provide assistance and guidance. Whether you need clarification on your billing
+                    statement or assistance with setting up a payment plan, we're committed to helping you navigate the financial aspects of
+                    your education.
+                    </li>
+                    <li>Schedule Adjustments: Encountered a scheduling conflict or need to drop a subject from your course load? Visit the
+                    Registrar's Office to explore your options and make necessary adjustments to your schedule. Our team will work with you
+                    to find alternative class times, drop unwanted subjects, or explore course substitutions to ensure that your academic
+                    journey remains on track.</li>
+                    <li>Conflict Resolution: Facing a scheduling conflict or administrative issue that requires resolution? Rest assured that
+                    our dedicated staff members are equipped to address any challenges that may arise during the registration process.
+                    Whether it's resolving course conflicts, addressing enrollment issues, or facilitating communication with academic
+                    departments, we're here to help you find solutions and overcome obstacles.</li>
+                    <li> Student Support: Beyond addressing administrative concerns, the Registrar's Office is committed to providing
+                    comprehensive support to students throughout their academic journey. Whether you need guidance on academic policies,
+                    assistance with registration procedures, or referrals to campus resources, our team is here to support you every step of
+                    the way.</li>
+                </ul>
+        </div> 
+    </div>
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+    
+    <script>
+        // Get the menu toggle button
+        const menuToggle = document.getElementById('menu-toggle');
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu-list');
+
+        // Add event listener for menu toggle button
+        menuToggle.addEventListener('click', function() {
+        // Toggle the class 'open' on the menu list
+        menuList.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>

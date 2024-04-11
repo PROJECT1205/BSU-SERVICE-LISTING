@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="facilities.css">
+    <title> FACILITIES PAGE</title>
+    <link rel="website icon" type="jpg" href="website.jpg">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="header"> </div>
+        <div class="navbar-laptop">
+            <center>    
+                <button  onclick="location.href='index.html'"> HOME </a> </button>
+            <button  onclick="location.href='contacts.html'">CONTACTS </a> </button>
+            <button  onclick="location.href='about.html'">  ABOUT </a> </button>
+            <div class="dropdown"> 
+                <button class="button">MAP &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="facilities.html">FACILITIES</a>
+                    <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="menu-laptop"> 
+            <button  onclick="location.href='canteen.html'"> Lian Cafeteria </a> </button> <br>
+            <button  onclick="location.href='opencourt.html'">   OPEN COURT  </a> </button> <br>
+            <button  onclick="location.href='josongym.html'"> JOSON GYM  </a> </button> <br>
+            <button  onclick="location.href='ged.html'">  GED FACULTY </a> </button> <br>
+            <button  onclick="location.href='registrar.html'">  REGISTRAR OFFICE</a> </button> <br>
+            <button  onclick="location.href='guidance.html'">  GUIDANCE OFFICE  </a> </button> <br>
+            <button  onclick="location.href='imt.html'">  HOSTEL BUILDING  </a> </button> <br>
+            <button  onclick="location.href='cas.html'">  CAS BUILDING </a> </button> <br>
+            <button  onclick="location.href='heb.html'">  HEB Building</a> </button> <br>
+            <button  onclick="location.href='cteb.html'">  CTEB Building</a> </button> <br>
+            <button  onclick="location.href='parking.html'">  PARKING SPACE</a> </button> <br>
+
+        </div>
+        <div class="loader"></div>
+      
+        <div class="content-cellphone">
+            <h2>dito ilalagay ang pics etc.</h2>
+        </div> 
+
+        <div class="content-laptop">
+            <img src="joson.JPG" alt="Description of your image">
+                
+               <h2>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Joson GYM  <br> <br>Are you ready to elevate your game and fitness levels to new heights? <br> Look no further than Joson Gym, the premier 
+            destination for basketball aficionados and physical education enthusiasts alike! Nestled in the heart of our campus, <br>
+            Joson Gym offers a dynamic space where you can hone your basketball skills, engage in invigorating workouts, and <br>
+            participate in special activities that will leave you energized and inspired.</h2>
+                <ul>
+                    <li>State-of-the-Art Basketball Facilities: Step onto our pristine basketball courts and experience the thrill of the game
+                    like never before. Whether you're practicing your jump shot, perfecting your dribbling skills, or engaging in friendly
+                    pickup games with friends, our top-notch facilities provide the perfect backdrop for endless hours of basketball
+                    excitement.</li>
+                    <li>Versatile Space for Physical Education: At Joson Gym, physical education isn't just about exercise—it's about
+                    exploration, discovery, and personal growth. Our expansive gymnasium serves as the ultimate playground for PE classes,
+                    offering students a diverse array of activities and exercises to enhance their fitness levels and overall well-being. </li>
+                    <li>Dome-Shaped Architecture: Marvel at the unique dome-shaped architecture of Joson Gym, which not only adds a touch of
+                    elegance to the space but also provides excellent acoustics and ventilation for a comfortable and enjoyable experience.
+                    Whether you're shooting hoops on the court or participating in special events on the stage, you'll appreciate the
+                    thoughtfully designed layout of our gymnasium.</li>
+                    <li> Multi-Purpose Stage for Special Activities: Unleash your creativity and showcase your talents on our multi-purpose
+                    stage, which serves as the focal point for a variety of special activities and events. From talent shows and dance
+                    performances to guest lectures and award ceremonies, our stage is equipped to accommodate all manner of memorable
+                    occasions.</li>
+                </ul>
+        </div> 
+    </div>
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+    
+    <script>
+        // Get the menu toggle button
+        const menuToggle = document.getElementById('menu-toggle');
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu-list');
+
+        // Add event listener for menu toggle button
+        menuToggle.addEventListener('click', function() {
+        // Toggle the class 'open' on the menu list
+        menuList.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>

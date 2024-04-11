@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="facilities.css">
+    <title> FACILITIES PAGE</title>
+    <link rel="website icon" type="jpg" href="website.jpg">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="header"> </div>
+        <div class="navbar-laptop">
+            <center>    
+                <button  onclick="location.href='index.html'"> HOME </a> </button>
+            <button  onclick="location.href='contacts.html'">CONTACTS </a> </button>
+            <button  onclick="location.href='about.html'">  ABOUT </a> </button>
+            <div class="dropdown"> 
+                <button class="button">MAP &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="facilities.html">FACILITIES</a>
+                    <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="menu-laptop"> 
+                <button  onclick="location.href='canteen.html'"> Lian Cafeteria </a> </button> <br>
+                <button  onclick="location.href='opencourt.html'">   OPEN COURT  </a> </button> <br>
+                <button  onclick="location.href='josongym.html'"> JOSON GYM  </a> </button> <br>
+                <button  onclick="location.href='ged.html'">  GED FACULTY </a> </button> <br>
+                <button  onclick="location.href='registrar.html'">  REGISTRAR OFFICE</a> </button> <br>
+                <button  onclick="location.href='guidance.html'">  GUIDANCE OFFICE  </a> </button> <br>
+                <button  onclick="location.href='imt.html'">  HOSTEL BUILDING  </a> </button> <br>
+                <button  onclick="location.href='cas.html'">  CAS BUILDING </a> </button> <br>
+                <button  onclick="location.href='heb.html'">  HEB Building</a> </button> <br>
+                <button  onclick="location.href='cteb.html'">  CTEB Building</a> </button> <br>
+                <button  onclick="location.href='parking.html'">  PARKING SPACE</a> </button> <br>
+        </div>
+        <div class="loader"></div>
+      
+        <div class="content-cellphone">
+            <h2>dito ilalagay ang pics etc.</h2>
+        </div> 
+
+        <div class="content-laptop">
+            <img src="parking.JPG" alt="Description of your image">
+                
+               <h2>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PARKING SPACE <br> <br>Navigating campus life just got easier with our dedicated Parking Area, providing hassle-free parking solutions for <br>
+            students, faculty, and staff members alike. Whether you're commuting by car or motorcycle, our secure and accessible <br>
+            parking facilities ensure that you can park with peace of mind while you focus on your academic pursuits.</h2>
+                <ul>
+                    <li>Reserved Parking with BSU Sticker: Gain exclusive access to our parking premises by displaying your BSU parking sticker
+                    prominently on your vehicle. With your BSU sticker affixed, you can enjoy the convenience of parking within campus
+                    grounds, saving time and effort on your daily commute.
+                    </li>
+                    <li>Ample Parking Spaces: Say goodbye to circling endlessly in search of parking spots. Our Parking Area boasts ample spaces
+                    to accommodate vehicles of all sizes, including cars, motorcycles, and bicycles. Whether you prefer covered parking or
+                    open-air spaces, we have options to suit your preferences.</li>
+                    <li>Convenient Location: Located strategically within campus premises, our Parking Area offers convenient access to academic
+                    buildings, administrative offices, and student facilities. Say goodbye to long walks from distant parking lots—our
+                    central location ensures that you're never far from your destination.</li>
+                    <li> 24/7 Security Surveillance: Your safety and security are our top priorities. Our Parking Area is equipped with
+                    state-of-the-art surveillance systems and dedicated security personnel to monitor activity and deter unauthorized
+                    access. Park with confidence, knowing that your vehicle is in good hands.</li>
+                </ul>
+        </div> 
+    </div>
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+    
+    <script>
+        // Get the menu toggle button
+        const menuToggle = document.getElementById('menu-toggle');
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu-list');
+
+        // Add event listener for menu toggle button
+        menuToggle.addEventListener('click', function() {
+        // Toggle the class 'open' on the menu list
+        menuList.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>

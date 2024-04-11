@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contacts.css">
+    <title>Contacts Page</title>
+    <link rel="icon" type="image/jpg" href="website.jpg"> 
+</head>
+
+<body>
+    <div id="container">
+        <div class="header"></div>
+        
+
+
+        <div class="navbar-laptop">
+            <center>    
+                <button onclick="location.href='index.html'"> HOME </button>
+                <button onclick="location.href='contacts.html'">CONTACTS </button>
+                <button onclick="location.href='about.html'">  ABOUT </button>
+                <div class="dropdown"> 
+                    <button class="button">MAP &nbsp; ▼</button>
+                    <div class="dropdown-content">
+                        <a id="top" href="facilities.html">FACILITIES</a>
+                        <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                    </div>
+                </div>
+            </center>
+        </div>
+        
+
+
+        <div class="content-laptop">
+            <h1>Team Leader</h1>
+            <h2> Naicel Apolona</h2>
+            <img class="leader-picture" src="naicel.jpg" alt="Naicel">
+             <ul class="leader">
+                <li>Age: 18 Years Old</li>
+                <li>Gmail: 23-77459@g.batstate-u.edu.ph</li>
+                <li>Contact #: 09064064647 </li>
+             </ul>
+            <br>
+         <div class="members-container">
+            <div class="member"> 
+             <h1>Members</h1>
+             <h2>AJ Catli</h2>
+             <img class="member-picture" src="aj.jpg" alt="AJ Catli">
+             <ul>
+                <li>Age: 21 Years Old</li>
+                <li>Gmail: 23-71752@g.batstate-u.edu.ph</li>
+                <li>Contact #: 09064064647 </li>
+             </ul>
+             <br>
+             <h2>Saipoden Banto</h2>
+             <img class="member-picture" src="saipoden.jpg" alt="Saipoden Banto">
+             <ul>
+                <li>Age: 19 Years Old</li>
+                <li>Gmail: 23-75760@g.batstate-u.edu.ph</li>
+                <li>Contact #: 09456570501 </li>
+             </ul>
+              <br>
+             <h2>Sofia La-arni Tapongco</h2>
+             <img class="member-picture" src="sofia.jpeg" alt="Sofia La-arni ">
+             <ul>
+                <li>Age: 19 Years Old</li>
+                <li>Gmail: 23-75707@g.batstate-u.edu.ph</li>
+                <li>Contact #: 09686016060 </li>
+             </ul>
+            <br>
+             <h2>Geleen Dimaala</h2>
+             <img class="member-picture" src="geleen.jpg" alt="Geleen">
+             <ul>
+                <li>Age: 21 Years Old</li>
+                <li>Gmail: 23-75091@g.batstate-u.edu.ph</li>
+                <li>Contact #: 09096111785 </li>
+             </ul>
+            <br>
+             <h2>Jake Estano</h2>
+             <img class="member-picture" src="jake.jpg" alt="Jake ">
+             <ul>
+                <li>Age: 18 Years Old</li>
+                <li>Gmail: 23-72354@g.batstate-u.edu.ph</li>
+                <li>Contact #: 09972610109 </li>
+             </ul>
+             <br>
+             <h2>Theresa Valiente</h2>
+             <img class="member-picture" src="theresa.png" alt="Theresa ">
+             <ul>
+                <li>Age: 19 Years Old</li>
+                <li>Gmail: 23-76695@g.batstate-u.edu.ph</li>
+                <li>Contact #: 09450742313 </li>
+             </ul>
+            <br> 
+             <h2>Dustin Catapang</h2>
+             <img class="member-picture" src="dustin.jpg" alt="Theresa ">
+             <ul>
+                <li>Age: 19 Years Old</li>
+                <li>Gmail: 23-75022@g.batstate-u.edu.ph</li>
+                <li>Contact #: 09309018979 </li>
+             </ul>
+            </div>
+         </div>
+        </div> 
+
+        <div class="laptop-contacts">
+            <h1>Send Feedback</h1>
+            <form id="feedbackForm">
+                <label for="Email-laptop">Your Email:</label>
+                <input type="email" id="Email-laptop" name="Email-laptop" required><br>
+                <label for="Name-laptop">Your Name:</label>
+                <input type="text" id="Name-laptop" name="Name-laptop" required><br>
+                <label for="message-laptop">Your Message:</label>
+                <textarea id="message-laptop" name="message-laptop" rows="4" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+        <div class="loader"></div>
+    </div>
+
+    
+        <!--this is the scipt for the loading screen-->
+    <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+
+    <script>
+     document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        const email = formData.get("Email-laptop");
+        const name = formData.get("Name-laptop");
+        const message = formData.get("message-laptop");
+        const emailContent = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+        const teamLeaderEmail = "23-71752@g.batstate-u.edu.ph";
+        const subject = "Feedback Submission";
+        const mailToLink = `mailto:${teamLeaderEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
+        window.location.href = mailToLink;
+    });
+    </script>
+
+
+
+</body>
+</html>

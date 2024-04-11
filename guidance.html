@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="facilities.css">
+    <title> FACILITIES PAGE</title>
+    <link rel="website icon" type="jpg" href="website.jpg">
+</head>
+<body>
+    <div id="container">
+        
+        <div class="header"> </div>
+        <div class="navbar-laptop">
+            <center>    
+                <button  onclick="location.href='index.html'"> HOME </a> </button>
+            <button  onclick="location.href='contacts.html'">CONTACTS </a> </button>
+            <button  onclick="location.href='about.html'">  ABOUT </a> </button>
+            <div class="dropdown"> 
+                <button class="button">MAP &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="facilities.html">FACILITIES</a>
+                    <a id="middle" href="stundentarea.html">STUDENTS AREA</a>
+                </div>
+            </center>
+        </div>
+
+        
+
+        <div class="menu-laptop"> 
+            <button  onclick="location.href='canteen.html'"> Lian Cafeteria </a> </button> <br>
+            <button  onclick="location.href='opencourt.html'">   OPEN COURT  </a> </button> <br>
+            <button  onclick="location.href='josongym.html'"> JOSON GYM  </a> </button> <br>
+            <button  onclick="location.href='ged.html'">  GED FACULTY </a> </button> <br>
+            <button  onclick="location.href='registrar.html'">  REGISTRAR OFFICE</a> </button> <br>
+            <button  onclick="location.href='guidance.html'">  GUIDANCE OFFICE  </a> </button> <br>
+            <button  onclick="location.href='imt.html'">  HOSTEL BUILDING  </a> </button> <br>
+            <button  onclick="location.href='cas.html'">  CAS BUILDING </a> </button> <br>
+            <button  onclick="location.href='heb.html'">  HEB Building</a> </button> <br>
+            <button  onclick="location.href='cteb.html'">  CTEB Building</a> </button> <br>
+            <button  onclick="location.href='parking.html'">  PARKING SPACE</a> </button> <br>
+        </div>
+        <div class="loader"></div>
+      
+        <div class="content-cellphone">
+            <h2>dito ilalagay ang pics etc.</h2>
+        </div> 
+
+        <div class="content-laptop">
+            <img src="guidance.JPG" alt="Description of your image">
+                
+               <h2>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GUIDANCE OFFICE  <br> <br>The Guidance Office is a vital resource on campus, dedicated to providing support, guidance, and accountability to <br>
+            students as they navigate their academic journey. While our primary focus is on offering assistance and mentorship, we <br>
+            also play a role in upholding the standards and values of our university community.</h2>
+                <ul>
+                    <li>Supportive Guidance: Whether you're facing personal challenges, academic struggles, or simply seeking guidance on your
+                    educational path, our doors are always open to lend a listening ear and offer compassionate support. Our trained
+                    counselors are here to help you explore solutions, develop coping strategies, and navigate the complexities of
+                    university life.
+                    </li>
+                    <li>Accountability and Discipline: As members of the university community, we all have a responsibility to uphold its values
+                    and standards of conduct. In instances where a student's behavior or actions may have fallen short of these
+                    expectations, the Guidance Office plays a role in addressing the situation with fairness and accountability. This may
+                    involve discussions, warnings, or disciplinary measures as necessary to maintain the integrity of our community and
+                    promote a safe and respectful environment for all.</li>
+                    <li>Conflict Resolution: When conflicts arise between students, faculty, or staff members, the Guidance Office serves as a
+                    neutral mediator to facilitate communication, resolve misunderstandings, and seek amicable solutions. Our goal is to
+                    foster constructive dialogue and promote mutual understanding, ultimately fostering a harmonious and inclusive campus
+                    environment.</li>
+                    <li> Education and Prevention: In addition to addressing issues as they arise, the Guidance Office is committed to proactive
+                    efforts aimed at education and prevention. Through workshops, seminars, and awareness campaigns, we strive to promote
+                    positive behaviors, enhance interpersonal skills, and empower students to make informed decisions that contribute to
+                    their personal and academic success.</li>
+                </ul>
+        </div> 
+    </div>
+        <!--this is the scipt for the loading screen-->
+   <script>
+        // Hide loader when content is loaded
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+    
+    <script>
+        // Get the menu toggle button
+        const menuToggle = document.getElementById('menu-toggle');
+
+        // Get the menu list
+        const menuList = document.querySelector('.menu-list');
+
+        // Add event listener for menu toggle button
+        menuToggle.addEventListener('click', function() {
+        // Toggle the class 'open' on the menu list
+        menuList.classList.toggle('open');
+        });
+
+    </script>
+</body>
+</html>
